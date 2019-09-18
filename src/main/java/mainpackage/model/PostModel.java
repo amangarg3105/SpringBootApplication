@@ -5,7 +5,6 @@ import springdemo.Model;
 
 public class PostModel {
 
-
 	private Integer id;
 
 	private String title;
