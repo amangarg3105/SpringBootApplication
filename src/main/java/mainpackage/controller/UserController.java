@@ -24,6 +24,16 @@ public class UserController {
 	public String login() {
 		return "users/login";
 	}
+	
+	@RequestMapping("users/registration")
+	public String registration() {
+		return "users/registration";
+	}
+	
+	@RequestMapping("users/logout")
+	public String logout() {
+		return "users/logout";
+	}
 
 	@RequestMapping(value = "users/login", method = RequestMethod.POST)
 	public String loginUser(User user) {
@@ -34,7 +44,11 @@ public class UserController {
 			return "users/login";
 		}
 	}
-
+	
+	@RequestMapping(value = "users/registration", method = RequestMethod.POST)
+	public String registrationUser(User user) {
+		return "redirect:/posts";
+	}
 
 
 }
