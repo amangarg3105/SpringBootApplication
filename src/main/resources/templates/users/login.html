@@ -11,10 +11,12 @@
     <h2>Please Login:</h2>
 
     <form th:action="@{/users/login}" th:method="POST" th:object="${User}">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username"/>
+        <label for="username">User name:</label>
+        <input type="text" id="username" name="username"/><br>
+        
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password"/>
+        <input type="password" id="password" name="password"/><br>
+        
         <input type="submit" value="Login"/>
     </form>
 
